@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <div class="container">
-        
+    <div class="container mx-auto flex justify-center h-full">
+        <div class="innerBody border-4 p-5 mt-0 sm:mt-24">
+            <!-- Form -->
+            <form>
+                <label class="block text-xl" for="route">Odabir rute:</label>
+                <select class="p-3 min-w-[15rem] mb-4" name="route" id="route">
+                  <option value="route1">Rovinj-Vrsar</option>
+                  <option value="route2">Vrsar-Lim Ulaz</option>
+                  <option value="route3">Lim Ulaz-Vrh Lima</option>
+                  <option value="route4">Lim Ulaz-Rovinj</option>
+                </select>
+                <button id="edit" class="bg-amber-300 hover:bg-amber-400 p-2 rounded">Edit</button>
+                <label for="speed" class="block text-xl ">Brzina broda u čv:</label>
+                <input type="number" name="speed" id="speed" class="block w-full p-2 text-center mb-4" placeholder="automatic">
+                <label for="speed" class="block text-xl ">Pozicija:</label>
+                <input type="number" name="speed" id="speed" class="block w-full p-2 text-center mb-4" placeholder="automatic">
+                <br><br>
+                <button class="bg-amber-300 border-2 py-2 px-2 rounded-full w-32  hover:bg-amber-400 hover:-translate-x-px hover:translate-y-px  mx-auto block">Izračunaj</button>
+            </form>
+            <!-- End of form -->
+        </div>
     </div>
 </body>
 </html>
