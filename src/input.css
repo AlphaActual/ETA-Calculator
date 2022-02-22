@@ -10,3 +10,10 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.767),rgba(255, 255, 255, 0.767)), url(../dist/img/topography.svg);
 }
 
+table, th, td {
+    @apply border border-red-600 
+  }
+table {
+    @apply border-collapse
+}
+
